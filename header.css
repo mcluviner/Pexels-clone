@@ -1,0 +1,278 @@
+* {
+  font-family: PlusJakartaSans, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Cantarell, Helvetica Neue, Ubuntu, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 50px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  border-bottom: 1px solid rgb(248, 242, 242);
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  z-index: 50;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.left-section,
+.middle-section,
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section {
+  margin-left: 60px;
+}
+
+.left-section * {
+  margin-right: 15px;
+}
+
+.middle-section {
+  flex: 1;
+  margin: 0 60px 0 10px;
+  min-width: 220px;
+}
+
+.right-section {
+  margin-right: 25px;
+}
+
+.logo-paragraph {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.search-input {
+  height: 50px;
+  flex: 1;
+  border: none;
+  background-color: rgb(250, 248, 248);
+  font-size: 17px;
+  font-weight: 500;
+  outline: none;
+  border-radius: 8px;
+  padding: 0 20px;
+  transition: border 0.25s;
+  min-width: 120px;
+}
+
+.search-input::placeholder {
+  color: rgb(131, 131, 131);
+  font-size: 18px;
+}
+
+.search-input:focus {
+  border: 1px solid gainsboro;
+  background-color: white;
+}
+
+.search-div {
+  background-color: rgb(250, 248, 248);
+  height: 50px;
+  width: 52px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.search-div:active {
+  background-color: rgb(211, 211, 211);
+}
+
+.search-icon {
+  width: 24px;
+}
+
+.explore-div {
+  position: relative;
+  padding-right: 10px;
+}
+
+.down-arrow-icon {
+  height: 10px;
+  position: absolute;
+  top: 7px;
+  right: -5px;
+}
+
+.dots-icon {
+  width: 18px;
+  margin-bottom: -3px;
+}
+
+.right-section div {
+  margin: 0 30px 0 0px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(71, 71, 71);
+  cursor: pointer;
+}
+
+.right-section div:hover {
+  color: black;
+}
+
+.join-btn {
+  background-color: rgb(5, 160, 129);
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.join-btn:hover {
+  background-color: rgb(103, 131, 103);
+}
+
+.list-container {
+  padding-top: 10px;
+  position: absolute;
+  top: 20px;
+  left: -60px;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.explore-list,
+.explore-list2 {
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  background-color: white;
+  display: none;
+}
+
+.explore-list ul,
+.explore-list2 ul {
+  list-style-type: none;
+}
+
+.explore-list ul li,
+.explore-list2 ul li {
+  white-space: nowrap;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.explore-list ul li:hover,
+.explore-list2 ul li:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.list-1 {
+  margin-top: 10px;
+}
+
+.explore-div:hover .explore-list,
+.dots-div:hover .explore-list2 {
+  display: block;
+}
+
+.explore-div:hover .down-arrow-icon {
+  --webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.dots-div {
+  position: relative;
+}
+
+.list-container2 {
+  padding: 25px 15px 0 10px;
+  position: absolute;
+  top: 20px;
+  right: -45px;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.explore-list2 ul li {
+  padding-right: 75px;
+}
+
+.dots-ul-1 {
+  border-bottom: 1px solid rgb(241, 239, 239);
+}
+
+.list-3-dots {
+  margin-bottom: 10px;
+}
+
+.alt-right-section {
+  display: none;
+  margin-right: 10px;
+}
+
+.als-div {
+  padding: 10px 8px;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+}
+
+.burger-icon {
+  width: 32px;
+}
+
+@media (max-width: 1014px) {
+  .middle-section {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 905px) {
+  .right-section {
+    display: none;
+  }
+
+  .alt-right-section {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+  }
+
+  .middle-section {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  .logo-paragraph {
+    display: none;
+  }
+  .left-section {
+    margin-left: 20px;
+  }
+
+  .alt-right-section {
+    margin-right: 10px;
+  }
+}

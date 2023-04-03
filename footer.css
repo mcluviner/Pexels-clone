@@ -1,0 +1,16 @@
+footer {
+  background-color: black;
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rights {
+  font-size: 16px;
+  color: rgb(121, 121, 121);
+}
+
+/* The footer section should contain lists and more stuff 
+but I was too lazy too finish the remaining of the website*/

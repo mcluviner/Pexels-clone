@@ -1,0 +1,160 @@
+main {
+  margin: 0 55px;
+  padding-top: 130px;
+}
+
+.info-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.title-div {
+  font-size: 50px;
+  font-weight: 500;
+  color: rgb(53, 53, 53);
+}
+
+.selection-div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.left-selection-div {
+  display: flex;
+}
+
+#first-button {
+  background-color: black;
+  color: white;
+}
+
+#first-button span {
+  color: gray;
+}
+
+.left-selection-div div {
+  color: rgb(69, 69, 69);
+  padding: 14px 22px;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.left-selection-div div span {
+  color: rgb(167, 165, 165);
+  font-size: 15px;
+  margin-left: 4px;
+  transition: color 0.2s;
+}
+
+.left-selection-div #second-button,
+.left-selection-div #third-button {
+  padding: 14px 8px;
+}
+
+.left-selection-div #first-button:hover {
+  opacity: 0.8;
+}
+
+.left-selection-div #second-button:hover,
+.left-selection-div #third-button:hover {
+  color: black;
+}
+
+.left-selection-div #second-button:hover span,
+.left-selection-div #third-button:hover span {
+  color: rgb(114, 114, 114);
+}
+
+.content-div {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  position: relative;
+}
+
+.content-div div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.content-div img {
+  width: 100%;
+}
+
+.content-div div .shadow-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  display: none;
+  box-shadow: inset 10px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.content-div div:hover .shadow-box {
+  display: block;
+}
+
+.right-selection-button {
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  padding: 12px 28px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.right-selection-button:hover {
+  border-color: rgb(45, 45, 45);
+}
+
+@media (max-width: 840px) {
+  .content-div {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .title-div {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 650px) {
+  .content-div {
+    grid-template-columns: 1fr;
+  }
+
+  .title-div {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .left-selection-div {
+    display: none;
+  }
+
+  .selection-div {
+    justify-content: center;
+  }
+
+  .right-selection-div {
+    width: 100%;
+  }
+
+  .right-selection-button {
+    width: 100%;
+  }
+}
